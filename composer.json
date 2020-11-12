@@ -3,6 +3,7 @@
     "description": "Google reCAPTCHA v3 for Laravel",
     "type": "library",
     "require": {
+        "php": ">=5.5",
         "google/recaptcha": "^1.2"
     },
     "require-dev": {
