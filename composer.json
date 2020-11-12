@@ -1,0 +1,34 @@
+{
+    "name": "nasteng/lara-captcha",
+    "description": "Google reCAPTCHA v3 for Laravel",
+    "type": "library",
+    "require": {
+        "google/recaptcha": "^1.2"
+    },
+    "require-dev": {
+        "google/recaptcha": "^1.2",
+        "phpunit/phpunit": "^9.4",
+        "orchestra/testbench": "^6.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "LaraCaptcha\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaraCaptcha\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaraCaptcha\\LaraCaptchaServiceProvider"
+            ],
+            "aliases": {
+                "LaraCaptcha": "LaraCaptcha\\Facades\\LaraCaptcha"
+            }
+        }
+    }
+}
